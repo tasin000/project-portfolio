@@ -86,6 +86,15 @@ h2 {
   height: 70%;
 }
 
+/* experiences designing */
+.cards{
+  display: flex;
+}
+
+.card{
+  border: 1px solid black;
+}
+
 /* footer designing */
 footer {
   text-align: center;
