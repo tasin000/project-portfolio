@@ -60,6 +60,16 @@ h2 {
   font-size: 50px;
 }
 
+hr{
+  width: 90%;
+  margin: 30px auto;
+  color: gray;
+}
+
+.ml{
+  margin-left: 20px;
+}
+
 /* about designing */
 .about {
   margin: 1%;
@@ -74,16 +84,20 @@ h2 {
 }
 
 .about .right img {
-  width: auto;
-  height: 70%;
+  width: 80%;
+  height: auto;
   display: block;
   margin: auto;
 }
 
 /* dream designing */
 .left-1 img {
-  width: auto;
-  height: 70%;
+  width: 80%;
+  height: auto;
+}
+
+.right-1{
+  padding: 2%;
 }
 
 /* experiences designing */
@@ -93,10 +107,45 @@ h2 {
 
 .card{
   border: 1px solid black;
+  border-radius: 15px;
+  padding: 5px;
+  margin: 5px;
 }
 
 /* footer designing */
 footer {
   text-align: center;
   margin: 10px 0;
+}
+
+/* 1300px and less */
+@media screen and (max-width: 1300px){
+  .cards{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card{
+    margin: 20px 50px;
+  }
+
+  .ml{
+    margin: 0;
+  }
+
+  .w-50{
+    width: 75%;
+  }
+}
+
+/* 1000px and less */
+@media screen and (max-width: 1000px){
+  .flex-design{
+    flex-direction: column;
+  }
+
+  .w-50{
+    width: 100%;
+  }
 }
